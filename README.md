@@ -9,4 +9,15 @@ Modified from [this script](https://github.com/enormandeau/Scripts/blob/master/f
 
 * splitFasta.pl
 
-Perl script to split a fasta file into chunks of certain size or number of sequence.
+Perl script to split a fasta file into chunks of certain size or number of sequence. Grabbed from [DeconSeq](https://sourceforge.net/projects/deconseq/files/misc/).
+'''
+Usage:
+    perl splitFasta.pl [-h] [-help] [-version] [-man] [-verbose] [options]
+
+    Examples:
+
+    perl splitFasta.pl -verbose -i file.fasta -s 2 #chunks of 2MB
+
+    perl splitFasta.pl -verbose -i file.fasta -n 10 #10 chunks
+    
+    
