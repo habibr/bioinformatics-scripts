@@ -95,7 +95,7 @@ totallen = 0
 totalrec = 0
 for fasta in sub_fasta:
 #    print len(fasta)
-    filename = to_split.split('.')[:-1][0] + '_' + str(l) + '.fasta'
+    filename = to_split.split('.')[:-1][0] + '_split_' + str(l) + '.fasta'
     SeqIO.write(fasta, filename, "fasta")
     for rec in fasta:
 	curlen += len(rec.seq)
